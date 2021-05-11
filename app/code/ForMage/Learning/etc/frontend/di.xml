@@ -19,4 +19,16 @@
             <argument name="size" xsi:type="object">ForMage\Learning\Model\SizeGreat</argument>
         </arguments>
     </type>
+
+    <type name="ForMage\Learning\Model\Product\Shirt">
+        <arguments>
+            <argument name="typeText" xsi:type="string">MY STRING IN ARGUMENT TYPE</argument>
+            <argument name="typeNumber" xsi:type="number">19.80</argument>
+            <argument name="typeArray" xsi:type="array">
+                <item name="customName" xsi:type="string">Antonio da Silva</item>
+                <item name="customColor" xsi:type="string">Purple</item>
+            </argument>
+            <argument name="typeInitParameter" xsi:type="init_parameter">ForMage\Learning\Model\Product\Shirt::MY_CONSTANT</argument>
+        </arguments>
+    </type>
 </config>
