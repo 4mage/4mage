@@ -32,6 +32,6 @@ class Index extends \Magento\Framework\App\Action\Action
 
     public function execute()
     {
-        var_dump($this->shirt);
+        var_dump($this->product);
     }
 }

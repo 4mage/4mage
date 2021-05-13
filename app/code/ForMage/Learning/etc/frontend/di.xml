@@ -13,10 +13,19 @@
     <preference for="ForMage\Learning\Api\ColorInterface"
                 type="ForMage\Learning\Model\ColorWhite" />
 
+    <preference for="ForMage\Learning\Api\MaterialInterface"
+                type="ForMage\Learning\Model\MaterialSynthetic" />
+
+    <virtualType name="typeMaterial" type="ForMage\Learning\Model\SizeGreat">
+        <arguments>
+            <argument name="material" xsi:type="object">ForMage\Learning\Model\MaterialSynthetic</argument>
+        </arguments>
+    </virtualType>
+
     <type name="ForMage\Learning\Model\Product\Shoe">
         <arguments>
             <argument name="color" xsi:type="object">ForMage\Learning\Model\ColorBlack</argument>
-            <argument name="size" xsi:type="object">ForMage\Learning\Model\SizeGreat</argument>
+            <argument name="size" xsi:type="object">typeMaterial</argument>
         </arguments>
     </type>
 
