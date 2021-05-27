@@ -32,6 +32,9 @@ class Index extends \Magento\Framework\App\Action\Action
 
     public function execute()
     {
-        var_dump($this->product);
+        $objecManager = \Magento\Framework\App\ObjectManager::getInstance();
+        $product = $objecManager->create('Magento\Catalog\Model\Product')->load(164);
+        $product->setName('Samsung Galaxy');
+        $product->getName();
     }
 }

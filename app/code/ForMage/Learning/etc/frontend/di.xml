@@ -40,4 +40,8 @@
             <argument name="typeInitParameter" xsi:type="init_parameter">ForMage\Learning\Model\Product\Shirt::MY_CONSTANT</argument>
         </arguments>
     </type>
+
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="plugin-formage-learning" type="ForMage\Learning\Plugin\PluginOne"></plugin>
+    </type>
 </config>
